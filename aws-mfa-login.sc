@@ -22,10 +22,10 @@ def overwriteFile(
 
 @main
 def main(
-    arnMfaDevice: String @doc(
+    arnMfaDevice: String @arg(doc = 
       "arn of the MFA device like arn:aws:iam::123456789012:mfa/user"
     ),
-    mfaToken: String @doc(
+    mfaToken: String @arg(doc = 
       "code from MFA token"
     )
 ) = {
